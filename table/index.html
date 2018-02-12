@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript" src="src/src.js">
+    </script>
+    <style>
+        .dataTables_wrapper {
+            position: relative;
+            clear: both;
+            zoom: 1;
+            width: 60%;
+            margin: 20px auto;
+        }
+        
+        #hidden_table {
+            visibility: hidden;
+        }
+        
+        #f_entry {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body class="wide comments example">
+    <div id="example_wrapper" class="dataTables_wrapper">
+        <div class="dataTables_length" id="example_length"><label>Show 
+            <select id="example_length" aria-controls="example" class="">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+            </select> entries</label><span id="f_entry">1</span> to <span id="l_entry">10</span> of <span>total</span> <span id="t_entry">57</span> <span>entries</span>
+        </div>
+        <div id="example_filter" class="dataTables_filter"><label>Search:<input id="search"class="" placeholder="" aria-controls="example" type="search"></label>
+        </div>
+        <table id="example" class="display dataTable" role="grid" aria-describedby="example_info" style="width: 100%;" cellspacing="0" width="100%">
+            <thead>
+                <tr role="row">
+                    <th class="sort" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 20px;" aria-label="Position: activate to sort column ascending">#</th>
+                    <th class="sort" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 137px;" aria-sort="ascending" aria-label="Name: activate to sort column descending">Name</th>
+                    <th class="sort" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 224px;" aria-label="Position: activate to sort column ascending">Position</th>
+                    <th class="sort" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 100px;" aria-label="Office: activate to sort column ascending">Office</th>
+                    <th class="sort" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 40px;" aria-label="Age: activate to sort column ascending">Age</th>
+                    <th class="sort" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 90px;" aria-label="Start date: activate to sort column ascending">Start date</th>
+                    <th class="sort" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 76px;" aria-label="Salary: activate to sort column ascending">Salary</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th rowspan="1" colspan="1">#</th>
+                    <th rowspan="1" colspan="1">Name</th>
+                    <th rowspan="1" colspan="1">Position</th>
+                    <th rowspan="1" colspan="1">Office</th>
+                    <th rowspan="1" colspan="1">Age</th>
+                    <th rowspan="1" colspan="1">Start date</th>
+                    <th rowspan="1" colspan="1">Salary</th>
+                </tr>
+            </tfoot>
+            <tbody>
+
+            </tbody>
+        </table>
+        <div class="dataTables_info" id="example_info" role="status" aria-live="polite">Showing <span id="c_page">1</span> of <span id="t_page">6</span> pages</div>
+        <div class="dataTables_paginate paging_simple_numbers" id="example_paginate">
+            <a class="paginate_button current" aria-controls="example" data-dt-idx="0" tabindex="0" id="example_first">First</a><span>
+            <a class="paginate_button current" aria-controls="example" data-dt-idx="0" tabindex="0" id="example_previous">Previous</a><span>
+            <a class="paginate_button current" aria-controls="example" data-dt-idx="0" tabindex="0" id="example_next">Next</a><span>        
+            <a class="paginate_button current" aria-controls="example" data-dt-idx="7" tabindex="0" id="example_last">Last</a>
+        </div>
+    </div>
+    <table id='hidden_table'>
+         <thead>
+                <tr role="row">
+                    <th class="sort" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 20px;" aria-label="Position: activate to sort column ascending">#</th>
+                    <th class="sort" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 137px;" aria-sort="ascending" aria-label="Name: activate to sort column descending">Name</th>
+                    <th class="sort" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 224px;" aria-label="Position: activate to sort column ascending">Position</th>
+                    <th class="sort" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 100px;" aria-label="Office: activate to sort column ascending">Office</th>
+                    <th class="sort" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 40px;" aria-label="Age: activate to sort column ascending">Age</th>
+                    <th class="sort" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 90px;" aria-label="Start date: activate to sort column ascending">Start date</th>
+                    <th class="sort" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 76px;" aria-label="Salary: activate to sort column ascending">Salary</th>
+                </tr>
+            </thead>
+             <tbody>
+
+            </tbody>
+    </table>
+</html>
